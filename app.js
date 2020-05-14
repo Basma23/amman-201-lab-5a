@@ -9,7 +9,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-
+    var sum = a+b;
+    var massage = `The sum of ${a} and ${b} is ${sum}.`;
+    return[sum,massage];
 }
 
 // Here is the test for sum(); uncomment it to run it
