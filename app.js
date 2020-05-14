@@ -133,7 +133,12 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
+    var massage = `The numbers 1,2,3,4,5 have a product of 120.`;
+    var dArr = 1;
+    for(let i = 0; i < dynamicArray.length; i++){
+        dArr= multiply(dArr, dynamicArray[i])[0];
+    }
+    return[dArr,massage];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
